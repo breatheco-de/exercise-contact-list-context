@@ -39,10 +39,20 @@ class ContactCard extends React.Component{
     }
     
 }
+
+/**
+ * here is where you define the data-types for
+ * your component propersties
+**/
 ContactCard.propTypes = {
     history: PropTypes.object,
     onDelete: PropTypes.func,
 };
+
+/**
+ * here is where you define the default values
+ * for your component propersties
+**/
 ContactCard.defaultProps = {
   onDelete: null
 };

@@ -6,7 +6,8 @@ class Modal extends React.Component{
     constructor(){
         super();
         this.state = {
-            // initialize your state
+            // here is where you have to initialize your state with the
+            // data that you need
         };
     }
     
@@ -38,11 +39,20 @@ class Modal extends React.Component{
     }
     
 }
+/**
+ * here is where you define the data-types for
+ * your component propersties
+**/
 Modal.propTypes = {
     history: PropTypes.object,
     onClose: PropTypes.func,
     show: PropTypes.bool
 };
+
+/**
+ * here is where you define the default values for
+ * your component propersties
+**/
 Modal.defaultProps = {
   show: false,
   onClose: null
