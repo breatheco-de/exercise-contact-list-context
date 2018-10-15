@@ -1,12 +1,10 @@
 import React from "react";
-import Flux from "@4geeksacademy/react-flux-dash";
 import { Link } from "react-router-dom";
 
 import ContactCard from '../components/ContactCard';
 import Modal from '../components/Modal';
-import avatar1 from '../../img/user_1.jpg';
 
-export default class Contacts extends Flux.View {
+export default class Contacts extends React.Component {
     constructor(){
         super();
         this.state = {

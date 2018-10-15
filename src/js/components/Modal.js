@@ -6,8 +6,7 @@ class Modal extends React.Component{
     constructor(){
         super();
         this.state = {
-            // here is where you have to initialize your state with the
-            // data that you need
+            // Initialize your state
         };
     }
     
@@ -26,11 +25,11 @@ class Modal extends React.Component{
                             }
                         </div>
                         <div className="modal-body">
-                            <p>If you delete this thing the entire universe will go down!</p>
+                            <p>Warning: unknown consequences after this point... Kidding!</p>
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-primary">Oh no!</button>
-                            <button type="button" className="btn btn-secondary" data-dismiss="modal">Yes baby!</button>
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal">Do it!</button>
                         </div>
                     </div>
                 </div>
@@ -40,8 +39,8 @@ class Modal extends React.Component{
     
 }
 /**
- * here is where you define the data-types for
- * your component propersties
+ * Define the data-types for
+ * your component's properties
 **/
 Modal.propTypes = {
     history: PropTypes.object,
@@ -50,8 +49,8 @@ Modal.propTypes = {
 };
 
 /**
- * here is where you define the default values for
- * your component propersties
+ * Define the default values for
+ * your component's properties
 **/
 Modal.defaultProps = {
   show: false,

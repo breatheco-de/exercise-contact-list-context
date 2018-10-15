@@ -1,10 +1,9 @@
 import React from 'react';
-import Flux from "@4geeksacademy/react-flux-dash";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Contacts from "./views/Contacts.jsx";
 import AddContact from "./views/AddContact.jsx";
 
-export default class Layout extends Flux.View {
+export default class Layout extends React.Component {
     render() {
         return (
             <div>

@@ -1,8 +1,7 @@
 import React from "react";
-import Flux from "@4geeksacademy/react-flux-dash";
 import { Link } from "react-router-dom";
 
-export default class Contacts extends Flux.View {
+export default class Contacts extends React.Component {
     render() {
         return (
             <div className="container">
