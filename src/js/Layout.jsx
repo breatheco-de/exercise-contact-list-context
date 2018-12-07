@@ -4,11 +4,6 @@ import Store from "./store/appContext.jsx";
 import Contacts from "./views/Contacts.jsx";
 import AddContact from "./views/AddContact.jsx";
 
-<<<<<<< HEAD
-import Store from "./store/appContext.jsx";
-
-=======
->>>>>>> upstream/master
 class Layout extends React.Component {
     render() {
         return (
