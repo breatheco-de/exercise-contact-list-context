@@ -19,7 +19,7 @@
         "exports": "never",
         "functions": "ignore",
     }],
-    "react/jsx-indent": ["error", 4],
+    "react/jsx-indent": ["error", 2],
     "react/prop-types": [2]
   },
   "extends": ["eslint:recommended", "plugin:react/recommended"]
