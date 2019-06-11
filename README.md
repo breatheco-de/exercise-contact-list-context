@@ -1,14 +1,17 @@
-# WebApp boilerplate with React and Cloud 9
+# Contact Managment Application
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello-webapp.git)
+
+### Read the instructions from https://projects.breatheco.de/d/contact-list#readme
 
 ### Requirements:
 - Make sure you are using node version 8
 
-##### Install the packages:
+### Install the packages:
 ```
 $ npm install
 ```
+#### if you see on the left the 'node_modules' folder, you don't need to run 'npm install'
 
 ## Start coding!
 
