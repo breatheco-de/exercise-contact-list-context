@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Store from "./store/appContext.jsx";
-import Contacts from "./views/Contacts.jsx";
-import AddContact from "./views/AddContact.jsx";
+// import ScrollToTop from "./component/scrollToTop";
 
-class Layout extends React.Component {
+import injectContext from "./store/appContext";
+
+import Contacts from "./views/Contacts.js";
+import AddContact from "./views/AddContact.js";
+
+export class Layout extends React.Component {
 	render() {
 		return (
 			<div>
@@ -25,4 +28,4 @@ class Layout extends React.Component {
 	}
 }
 
-export default Store(Layout);
+export default injectContext(Layout);
