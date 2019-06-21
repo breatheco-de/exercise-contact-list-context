@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "c9": "webpack-dev-server --mode development --open --host $IP --port $PORT",
+    "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode development"
   },
   "author": "",
