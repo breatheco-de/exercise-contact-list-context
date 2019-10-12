@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default class Contacts extends React.Component {
+export default class AddContact extends React.Component {
 	render() {
 		return (
 			<div className="container">
@@ -24,8 +24,12 @@ export default class Contacts extends React.Component {
 							<label>Address</label>
 							<input type="text" className="form-control" placeholder="Enter address" />
 						</div>
-						<button type="button" className="btn btn-primary form-control">save</button>
-						<Link className="mt-3 w-100 text-center" to="/">or get back to contacts</Link>
+						<button type="button" className="btn btn-primary form-control">
+							save
+						</button>
+						<Link className="mt-3 w-100 text-center" to="/">
+							or get back to contacts
+						</Link>
 					</form>
 				</div>
 			</div>
