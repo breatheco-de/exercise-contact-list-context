@@ -1,6 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
+import MikePhoto from "../../img/m101.jpg";
 
 class ContactCard extends React.Component {
 	constructor() {
@@ -16,7 +17,7 @@ class ContactCard extends React.Component {
 				<div className="row w-100">
 					<div className="col-12 col-sm-6 col-md-3 px-0">
 						<img
-							src="http://demos.themes.guide/bodeo/assets/images/users/m101.jpg"
+							src={MikePhoto}
 							alt="Mike Anamendolla"
 							className="rounded-circle mx-auto d-block img-fluid"
 						/>
