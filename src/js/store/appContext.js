@@ -21,7 +21,7 @@ const injectContext = PassedComponent => {
 			})
 		);
 
-		useEffect(() => { 
+		useEffect(() => {
 			/**
 			 * EDIT THIS!
 			 * This function is the equivalent to "window.onLoad", it only run once on the entire application lifetime
@@ -45,4 +45,3 @@ const injectContext = PassedComponent => {
 };
 
 export default injectContext;
-
