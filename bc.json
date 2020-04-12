@@ -4,7 +4,7 @@
 	"slug" : "contact-list-context",
 	"status": "published",
 	"difficulty": "intermediate",
-	"preview": "https://github.com/breatheco-de/execise-contact-list-context/blob/master/preview.gif?raw=true",
+	"preview": "https://github.com/breatheco-de/exercise-contact-list-context/blob/master/preview.gif?raw=true",
 	"technologies": ["react.js","javascript","context.api","flux"],
 	"solution": "https://bitbucket.org/codingacademy/contact-list-context",
 	"duration" : 24,
