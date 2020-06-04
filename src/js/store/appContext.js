@@ -30,6 +30,7 @@ const injectContext = PassedComponent => {
 			 * state.loadSomeData(); <---- calling this function from the flux.js actions
 			 *
 			 **/
+			// state.actions.loadContacts();
 			// state.actions.deleteContact("903");
 			// state.actions.deletePhoneBook("Contacts_Luis");
 			// state.actions.createContact();

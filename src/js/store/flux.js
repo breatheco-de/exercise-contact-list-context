@@ -1,5 +1,5 @@
 const url_base = "https://assets.breatheco.de/apis/fake/contact/";
-const getState = ({ getStore, setStore }) => {
+const getState = ({ getStore, setStore, getActions }) => {
 	return {
 		store: {
 			//Your data structures, A.K.A Entities
@@ -18,25 +18,19 @@ const getState = ({ getStore, setStore }) => {
 			// Remember to use the scope: scope.state.store & scope.setState()
 			getAllContacts: name => {
 				const currentStore = getStore();
-				let url = base_url + "agenda/" + name;
+				let url = url_base + "agenda/" + name;
 				console.log(url);
 				fetch(url)
 					.then(res => res.json())
 					.then(data => {
-						let itemList = [];
-						for (let item of data) {
-							itemList.push(item);
-						}
-						console.log(typeof itemList);
-						console.log(itemList);
 						setStore({
-							allContacts: itemList
+							allContacts: data
 						});
 					})
 					.catch(e => console.error(e));
 			},
 			loadContacts: () => {
-				//const actions = getActions();
+				const actions = getActions();
 				actions.getAllContacts("Asanchez2");
 			},
 			deleteContact(id) {
@@ -62,15 +56,18 @@ const getState = ({ getStore, setStore }) => {
 						data.msg;
 					});
 			},
-			createContact() {
+			createContact(newContact) {
 				let url = `${url_base}`;
 				let store = getStore();
 				let contact = store.createContact;
 
-				contact.full_name = "Luis Sánchez-Arévalo";
-				contact.email = "luis.sanchezarevalo@example.com";
-				contact.address = "47568 NW 34ST, 33434 FL, USA";
-				contact.phone = "7864445566";
+				contact.full_name = newContact.full_name;
+				contact.email = newContact.email;
+				contact.address = newContact.address;
+				contact.phone = newContact.phone;
+
+				console.log(JSON.stringify(contact));
+				console.log(url);
 
 				fetch(url, {
 					method: "POST",
@@ -79,9 +76,12 @@ const getState = ({ getStore, setStore }) => {
 						"Content-Type": "application/json"
 					}
 				})
-					.then(response => response.json())
+					.then(response => console.log(response.json()))
 					.catch(error => console.error("Error:", error))
-					.then(data => data);
+					.then(data => getActions().loadContacts());
+			},
+			printOnConsole(data) {
+				console.log(JSON.stringify(data));
 			}
 		}
 	};
