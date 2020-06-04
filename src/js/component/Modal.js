@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { Context } from "../store/appContext";
 import { withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 
@@ -32,7 +33,14 @@ export const Modal = props => {
 						<button type="button" className="btn btn-primary">
 							Oh no!
 						</button>
-						<button type="button" className="btn btn-secondary" data-dismiss="modal">
+						<button
+							type="button"
+							className="btn btn-secondary"
+							data-dismiss="modal"
+							onClick={() => {
+								//actions.deleteContact(props.history},
+								props.onClose();
+							}}>
 							Do it!
 						</button>
 					</div>

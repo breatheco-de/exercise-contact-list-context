@@ -1,5 +1,5 @@
 const url_base = "https://assets.breatheco.de/apis/fake/contact/";
-const getState = ({ getStore, setStore }) => {
+const getState = ({ getStore, setStore, getActions }) => {
 	return {
 		store: {
 			//Your data structures, A.K.A Entities
@@ -18,25 +18,22 @@ const getState = ({ getStore, setStore }) => {
 			// Remember to use the scope: scope.state.store & scope.setState()
 			getAllContacts: name => {
 				const currentStore = getStore();
-				let url = base_url + "agenda/" + name;
+				let url = url_base + "agenda/" + name;
 				console.log(url);
 				fetch(url)
 					.then(res => res.json())
 					.then(data => {
-						let itemList = [];
-						for (let item of data) {
-							itemList.push(item);
-						}
-						console.log(typeof itemList);
-						console.log(itemList);
 						setStore({
-							allContacts: itemList
+							allContacts: data
 						});
+						let store = getStore();
+						let contact = store.allContacts;
+						console.log(contact);
 					})
 					.catch(e => console.error(e));
 			},
 			loadContacts: () => {
-				//const actions = getActions();
+				const actions = getActions();
 				actions.getAllContacts("Asanchez2");
 			},
 			deleteContact(id) {
