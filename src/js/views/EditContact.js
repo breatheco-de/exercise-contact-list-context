@@ -1,15 +1,28 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Context } from "../store/appContext";
-import { Link } from "react-router-dom";
+import { Link, useRouteMatch, useParams } from "react-router-dom";
 import PropTypes from "prop-types";
 
-export const editContact = props => {
+export const EditContact = () => {
 	const { store, actions } = useContext(Context);
+	const match = useRouteMatch();
 	const [editName, setName] = useState("");
 	const [editPhone, setPhone] = useState("");
 	const [editEmail, setEmail] = useState("");
-	const [editAddress, setAdress] = useState("");
-	console.log("editing", store.allContacts);
+	const [editAddress, setAddress] = useState("");
+	useEffect(() => {
+		console.log("running useEffect");
+		for (let contact of store.allContacts) {
+			console.log("checking > ", contact);
+			if (contact.id == match.params.contactId) {
+				console.log("found it!");
+				setName(contact.full_name);
+				setPhone(contact.phone);
+				setEmail(contact.email);
+				setAddress(contact.address);
+			}
+		}
+	}, [store.allContacts]);
 
 	return (
 		<div className="container">
@@ -21,7 +34,7 @@ export const editContact = props => {
 						<input
 							type="text"
 							className="form-control"
-							defaultValue={store.allContacts.full_name}
+							value={editName}
 							onChange={e => setName(e.target.value)}
 							placeholder="Full Name"
 						/>
@@ -32,7 +45,7 @@ export const editContact = props => {
 							type="email"
 							className="form-control"
 							placeholder="Enter email"
-							defaultValue={store.allContacts.email}
+							defaultValue={editEmail}
 							onChange={e => setEmail(e.target.value)}
 						/>
 					</div>
@@ -42,7 +55,7 @@ export const editContact = props => {
 							type="phone"
 							className="form-control"
 							placeholder="Enter phone"
-							defaultValue={store.allContacts.phone}
+							defaultValue={editPhone}
 							onChange={e => setPhone(e.target.value)}
 						/>
 					</div>
@@ -52,7 +65,7 @@ export const editContact = props => {
 							type="text"
 							className="form-control"
 							placeholder="Enter address"
-							defaultValue={store.allContacts.address}
+							defaultValue={editAddress}
 							onChange={e => setAddress(e.target.value)}
 						/>
 					</div>
@@ -61,7 +74,13 @@ export const editContact = props => {
 							type="button"
 							className="btn btn-primary form-control"
 							onClick={() => {
-								actions.editContact(id, editName, editPhone, editEmail, editAddress);
+								actions.editContact(
+									match.params.contactId,
+									editName,
+									editPhone,
+									editEmail,
+									editAddress
+								);
 							}}>
 							Update changes
 						</button>
@@ -75,6 +94,4 @@ export const editContact = props => {
 	);
 };
 
-editContact.propTypes = {
-	match: PropTypes.object
-};
+EditContact.propTypes = {};

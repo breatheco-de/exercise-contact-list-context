@@ -7,7 +7,7 @@ import injectContext from "./store/appContext";
 
 import { Contacts } from "./views/Contacts.js";
 import { AddContact } from "./views/AddContact.js";
-import { editContact } from "./views/editContact.js";
+import { EditContact } from "./views/EditContact.js";
 
 export const Layout = () => {
 	return (
@@ -19,7 +19,9 @@ export const Layout = () => {
 						<Route exact path="/" component={Contacts} />
 						<Route exact path="/contacts" component={Contacts} />
 						<Route exact path="/add" component={AddContact} />
-						<Route exact path="/edit" component={editContact} />
+						<Route path="/edit/:contactId">
+							<EditContact />
+						</Route>
 						<Route render={() => <h1 className="notfound">Not found!</h1>} />
 					</Switch>
 				</div>

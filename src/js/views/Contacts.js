@@ -21,7 +21,7 @@ export const Contacts = () => {
 						{store.allContacts.map((data, index) => {
 							return (
 								<ContactCard
-									key={index}
+									key={data.id}
 									history={data}
 									onDelete={() => {
 										setState({ showModal: true });
@@ -39,7 +39,6 @@ export const Contacts = () => {
 
 Contacts.propTypes = {
 	history: PropTypes.any,
-	match: PropTypes.object,
 	onDelete: PropTypes.func,
 	onEdit: PropTypes.func
 };
