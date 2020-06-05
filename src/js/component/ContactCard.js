@@ -58,6 +58,8 @@ export const ContactCard = props => {
  **/
 ContactCard.propTypes = {
 	history: PropTypes.any,
+	match: PropTypes.object,
+	id: PropTypes.string,
 	onDelete: PropTypes.func,
 	onEdit: PropTypes.func
 };

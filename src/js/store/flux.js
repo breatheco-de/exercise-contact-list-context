@@ -83,6 +83,33 @@ const getState = ({ getStore, setStore, getActions }) => {
 					.catch(error => console.error("Error:", error))
 					.then(data => getActions().loadContacts());
 			},
+			editContact(id, editName, editPhone, editEmail, editAddress) {
+				fetch(url_base + id, {
+					method: "put",
+					headers: { "Content-Type": "application/json" },
+					body: JSON.stringify({
+						full_name: editName,
+						phone: editPhone,
+						email: editEmail,
+						address: editAddress,
+						agenda_slug: "Asanchez2"
+					})
+				}).then(() => {
+					const currentStore = getStore();
+					let url = url_base + "agenda/" + name;
+					fetch(url)
+						.then(res => res.json())
+						.then(data => {
+							setStore({
+								allContacts: data
+							});
+							let store = getStore();
+							let contact = store.allContacts;
+							console.log(contact);
+						})
+						.catch(e => console.error(e));
+				});
+			},
 			printOnConsole(data) {
 				console.log(JSON.stringify(data));
 			}
