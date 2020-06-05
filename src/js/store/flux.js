@@ -59,15 +59,18 @@ const getState = ({ getStore, setStore, getActions }) => {
 						data.msg;
 					});
 			},
-			createContact() {
+			createContact(newContact) {
 				let url = `${url_base}`;
 				let store = getStore();
 				let contact = store.createContact;
 
-				contact.full_name = "Luis Sánchez-Arévalo";
-				contact.email = "luis.sanchezarevalo@example.com";
-				contact.address = "47568 NW 34ST, 33434 FL, USA";
-				contact.phone = "7864445566";
+				contact.full_name = newContact.full_name;
+				contact.email = newContact.email;
+				contact.address = newContact.address;
+				contact.phone = newContact.phone;
+
+				console.log(JSON.stringify(contact));
+				console.log(url);
 
 				fetch(url, {
 					method: "POST",
@@ -76,9 +79,12 @@ const getState = ({ getStore, setStore, getActions }) => {
 						"Content-Type": "application/json"
 					}
 				})
-					.then(response => response.json())
+					.then(response => console.log(response.json()))
 					.catch(error => console.error("Error:", error))
-					.then(data => data);
+					.then(data => getActions().loadContacts());
+			},
+			printOnConsole(data) {
+				console.log(JSON.stringify(data));
 			}
 		}
 	};
