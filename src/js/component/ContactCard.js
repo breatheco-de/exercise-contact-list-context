@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Context } from "../store/appContext";
 import { withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import MikePhoto from "../../img/m101.jpg";
 
 export const ContactCard = props => {
@@ -16,12 +17,14 @@ export const ContactCard = props => {
 				</div>
 				<div className="col-12 col-sm-6 col-md-9 text-center text-sm-left">
 					<div className=" float-right">
-						<button className="btn">
-							<i className="fas fa-pencil-alt mr-3" />
-						</button>
-						<button className="btn" onClick={() => props.onDelete()}>
-							<i className="fas fa-trash-alt" />
-						</button>
+						<Link to="/edit">
+							<button className="btn">
+								<i className="fas fa-pencil-alt mr-3" />
+							</button>
+							<button className="btn" onClick={() => props.onDelete()}>
+								<i className="fas fa-trash-alt" />
+							</button>
+						</Link>
 					</div>
 					<label className="name lead">{props.history.full_name}</label>
 					<br />
