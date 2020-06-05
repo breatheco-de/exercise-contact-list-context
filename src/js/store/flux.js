@@ -26,6 +26,9 @@ const getState = ({ getStore, setStore, getActions }) => {
 						setStore({
 							allContacts: data
 						});
+						let store = getStore();
+						let contact = store.allContacts;
+						console.log(contact);
 					})
 					.catch(e => console.error(e));
 			},
