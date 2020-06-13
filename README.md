@@ -4,7 +4,7 @@ Technologies: HTML, CSS, JS, React, React Router and Context.
 
 Hello! It is time to start doing professional front-end applications. This time
 we will be creating a small contact management application that allows users to:
-Read, Create, Update and Delete contacts. [Check it out here!](https://projects.breatheco.de/json?slug=contact-list&preview)
+Read, Create, Update and Delete contacts. [Check it out here!](https://github.com/breatheco-de/exercise-contact-list/blob/master/preview.gif?raw=true)
 
 ***Please use the Context for this project:*** The boilerplate comes with the Context configured. Check the ```/store``` folder.
 
