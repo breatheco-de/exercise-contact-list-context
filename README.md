@@ -9,7 +9,7 @@ Read, Create, Update and Delete contacts.
 You may use this gif: [Check it out here!](https://github.com/breatheco-de/exercise-contact-list/blob/master/preview.gif?raw=true)
 
 Or you can use these images:
-[Image 1](https://github.com/ElviraQDP/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true)
+[Image 1](https://github.com/ElviraQDP/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true) y
 [Image 2!](https://github.com/ElviraQDP/exercise-contact-list-context/blob/master/src/img/contact-list-1.png)
 
 ***Please use the Context for this project:*** The boilerplate comes with the Context configured. Check the ```/store``` folder.
