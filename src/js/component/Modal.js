@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext, Component } from "react";
+import { Context } from "../store/appContext";
 import { withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 
 export const Modal = props => {
+	const { store, actions } = useContext(Context);
 	const [state, setState] = useState({
 		//initialize state here
 	});
@@ -26,14 +28,22 @@ export const Modal = props => {
 						)}
 					</div>
 					<div className="modal-body">
-						<p>Warning: unknown consequences after this point... Kidding!</p>
+						<p>Desea eliminar el contacto?</p>
 					</div>
 					<div className="modal-footer">
 						<button type="button" className="btn btn-primary">
-							Oh no!
+							No
 						</button>
-						<button type="button" className="btn btn-secondary" data-dismiss="modal">
-							Do it!
+						<button
+							type="button"
+							className="btn btn-secondary"
+							data-dismiss="modal"
+							onClick={() => {
+								actions.deleteContact(props.idToDelete);
+								props.onClose();
+								actions.fetchcontactlist();
+							}}>
+							Si
 						</button>
 					</div>
 				</div>
@@ -48,7 +58,8 @@ export const Modal = props => {
 Modal.propTypes = {
 	history: PropTypes.object,
 	onClose: PropTypes.func,
-	show: PropTypes.bool
+	show: PropTypes.bool,
+	idToDelete: PropTypes.string
 };
 
 /**
@@ -57,5 +68,6 @@ Modal.propTypes = {
  **/
 Modal.defaultProps = {
 	show: false,
+	idToDelete: null,
 	onClose: null
 };
