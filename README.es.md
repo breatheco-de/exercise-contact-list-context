@@ -10,8 +10,8 @@ Puedes usar este gif:
 [Compruébalo aquí!](https://projects.breatheco.de/json?slug=contact-list&preview)
 
 O bien estas imágenes:
-[Imagen 1](https://github.com/ElviraQDP/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true) y
-[Imagen 2!](https://github.com/ElviraQDP/exercise-contact-list-context/blob/master/src/img/contact-list-1.png)
+[Imagen 1](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true) y
+[Imagen 2!](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-1.png)
 
 
 ***Por favor, use el Contexto para este proyecto:*** La plantilla viene con el Contexto configurado. Verifique la carpeta ```/ store```.
