@@ -4,7 +4,15 @@ Tecnologías: HTML, CSS, JS, React, React Router and Context.
 
 ¡Hola! Es hora de empezar a hacer aplicaciones frontales profesionales. Esta vez
 Crearemos una pequeña aplicación de gestión de contactos que permitirá a los usuarios:
-Leer, crear, actualizar y eliminar contactos. [Compruébalo aquí!](https://projects.breatheco.de/json?slug=contact-list&preview)
+Leer, crear, actualizar y eliminar contactos. 
+
+Puedes usar este gif:
+[Compruébalo aquí!](https://projects.breatheco.de/json?slug=contact-list&preview)
+
+O bien estas imágenes:
+[Imagen 1](https://github.com/ElviraQDP/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true) y
+[Imagen 2!](https://github.com/ElviraQDP/exercise-contact-list-context/blob/master/src/img/contact-list-1.png)
+
 
 ***Por favor, use el Contexto para este proyecto:*** La plantilla viene con el Contexto configurado. Verifique la carpeta ```/ store```.
 
