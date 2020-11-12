@@ -10,7 +10,7 @@ You may use this gif: [Check it out here!](https://github.com/breatheco-de/exerc
 
 Or you can use these images:
 [Image 1](https://github.com/ElviraQDP/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true) and
-[Image 2!](https://github.com/ElviraQDP/exercise-contact-list-context/blob/master/src/img/contact-list-1.png)
+[Image 2!](https://github.com/ElviraQDP/exercise-contact-list-context/blob/master/src/img/contact-list-1.png?raw=true)
 
 ***Please use the Context for this project:*** The boilerplate comes with the Context configured. Check the ```/store``` folder.
 
