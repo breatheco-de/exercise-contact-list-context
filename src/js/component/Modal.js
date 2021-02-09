@@ -7,12 +7,9 @@ import { Link } from "react-router-dom";
 export const Modal = props => {
 	const { actions, store } = useContext(Context);
 	const [show, setShow] = useState(false);
-
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
-	const [state, setState] = useState({
-		//initialize state here
-	});
+
 	return (
 		<div className="modal" tabIndex="-1" role="dialog" style={{ display: props.show ? "inline-block" : "none" }}>
 			<div className="modal-dialog" role="document">
