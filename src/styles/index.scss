@@ -1,3 +1,9 @@
-/* 
-    General Styles
-*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+
+body{
+    font-family: 'Crimson Pro', serif;
+}
+.title_List{
+    display: flex;
+    justify-content: center;
+}

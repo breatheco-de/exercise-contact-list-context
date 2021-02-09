@@ -1,8 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
+import { Context } from "../store/appContext";
+import { Link } from "react-router-dom";
 
 export const Modal = props => {
+	const { actions, store } = useContext(Context);
+	const [show, setShow] = useState(false);
+
+	const handleClose = () => setShow(false);
+	const handleShow = () => setShow(true);
 	const [state, setState] = useState({
 		//initialize state here
 	});
@@ -29,10 +36,19 @@ export const Modal = props => {
 						<p>Warning: unknown consequences after this point... Kidding!</p>
 					</div>
 					<div className="modal-footer">
-						<button type="button" className="btn btn-primary">
-							Oh no!
-						</button>
-						<button type="button" className="btn btn-secondary" data-dismiss="modal">
+						<Link to="/">
+							<button type="button" className="btn btn-primary" onClick={handleClose}>
+								Oh no!
+							</button>
+						</Link>
+						<button
+							type="button"
+							className="btn btn-secondary"
+							data-dismiss="modal"
+							onClick={() => {
+								handleClose;
+								actions.deleteContact(props.id);
+							}}>
 							Do it!
 						</button>
 					</div>
@@ -48,7 +64,12 @@ export const Modal = props => {
 Modal.propTypes = {
 	history: PropTypes.object,
 	onClose: PropTypes.func,
-	show: PropTypes.bool
+	show: PropTypes.bool,
+	id: PropTypes.number,
+	name: PropTypes.string,
+	address: PropTypes.string,
+	phone: PropTypes.number,
+	email: PropTypes.string
 };
 
 /**
