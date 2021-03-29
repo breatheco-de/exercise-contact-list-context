@@ -9,18 +9,59 @@ Read, Create, Update and Delete contacts.
 You may use this gif: [Check it out here!](https://github.com/breatheco-de/exercise-contact-list/blob/master/preview.gif?raw=true)
 
 Or you can use these images:
-[Image 1](https://github.com/ElviraQDP/exercise-contact-list-context/blob/master/src/img/contact-list-1.png?raw=true) and
-[Image 2](https://github.com/ElviraQDP/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true)
+[Image 1](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-1.png?raw=true) and
+[Image 2](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true)
 
-***Please use the Context for this project:*** The boilerplate comes with the Context configured. Check the ```/store``` folder.
 
-### How to start?
+## 🌱  How to start this project
 
-Clone the repository with the boilerplate, it contains no real functionalities 
-but it has 99.99% of the HTML/CSS that you'll need for the project, 
-allowing you to focus on the functionality.
+Do not clone this repository.
 
-***Note: You'll need to code all functionalities.***
+The first step to start coding is cloning the [react boilerplate](https://github.com/4GeeksAcademy/react-hello) on your local computer or gitpod.
+
+a) If using Gitpod you can clone the boilerplate by [clicking here](https://github.com/4GeeksAcademy/react-hello).
+
+b) If working locally type the following command from your command line: `$ git clone https://github.com/4GeeksAcademy/react-hello`.
+
+💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
+
+
+## 🌱  How to start this project
+
+1. This project comes with the necessary files to start working, but you have two options to start:
+
+a) Open this link in your browser to clone it with gitpod: https://gitpod.io#https://github.com/breatheco-de/exercise-contact-list-context
+
+b) You can clone this repository on your local computer:
+
+```sh
+$ git clone https://github.com/breatheco-de/exercise-contact-list-context
+````
+2. Install the /node_modules
+```
+$ npm install
+```
+3. Run the webpack development server
+```
+$ npm run start
+```
+
+Do not clone this repository.
+
+The first step to start coding is cloning the [react boilerplate](https://github.com/4GeeksAcademy/react-hello) on your local computer or gitpod.
+
+a) If using Gitpod you can clone the boilerplate by [clicking here](https://github.com/4GeeksAcademy/react-hello).
+
+b) If working locally type the following command from your command line: `$ git clone https://github.com/4GeeksAcademy/react-hello`.
+
+This boilerplate contains no real functionalities but it has 99.99% of the HTML/CSS that you'll need for the project, allowing you to focus on the functionality.
+
+**Please use the Context for this project:** The boilerplate comes with the Context configured. Check the ```/store``` folder.
+
+**Note: You'll need to code all functionalities.**
+
+💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
+
 
 ### The project is divided in: 
 
@@ -48,19 +89,6 @@ Hint: start with some dummy content in the store (store.js).
 
 Hint: Use Postman to try the API endpoints before coding.  
 
-## Steps to install this project
 
-##### 1. Clone the repository
-```
-$ git clone https://github.com/breatheco-de/exercise-contact-list-context.git
-```
-##### 2. Install the /node_modules
-```
-$ npm install
-```
-##### 3. Run the webpack development server
-```
-$ npm run start
-```
 
 That is it! Start coding your React Application :)
