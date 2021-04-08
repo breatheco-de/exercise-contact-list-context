@@ -38,9 +38,9 @@ This boilerplate contains no real functionalities but it has 99.99% of the HTML/
 
 **Note: You'll need to code all functionalities.**
 
-### The project is divided in: 
+### :memo:This project is divided in: 
 
-#### Two different views: 
+#### :two: different views: 
 
 1. Contact: Contains the list of contacts.
 2. AddContact: It's just a form used to create or update contacts.
