@@ -14,13 +14,27 @@ O bien estas imágenes:
 [Imagen 2!](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true)
 
 
+## 🌱  Cómo iniciar este proyecto
+
+1. No clones este repositorio. El primer paso para comenzar a codificar es clonar el [react.js boilerplate](https://github.com/4GeeksAcademy/react-hello) en tu compjutador local o con Gitpod.
+
+a) Si usas Gitpod (recomendada) puedes clonar el boilerplate [clic aquí](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello).
+
+b) Si trabajas localmente, escribe el siguiente comando en tu terminal: `git clone https://github.com/4GeeksAcademy/react-hello`.
+
+💡 Importante: Recuerda actualizar el `remote` del proyecto con el de tu repositorio usando `git remote set-url origin <your new url>`, y luego guardar tu código en tu nuevo repositorio usando `add`, `commit` y `push`.
+
+2. Intala  /nodes_modules
+```
+$ npm install
+```
+3. Ejecuta el servidor webpack development 
+```
+$ npm run start
+```
+Este boilerplate no tiene funcionalidades pero si tiene el 99.9 % del HTML/CSS que necesitarás en este proyecto, lo que te permitirá enfocarte en las funcionalidades.
+
 ***Por favor, use el Contexto para este proyecto:*** La plantilla viene con el Contexto configurado. Verifique la carpeta ```/ store```.
-
-### ¿Como empezar?
-
-Clona el repositorio con el boilerplate, no contiene funcionalidades reales
-pero tiene 99.99% del HTML/CSS que necesitarás para el proyecto,
-Te permite centrarte en la funcionalidad.
 
 ***Nota: necesitarás codificar todas las funcionalidades.***
 
@@ -48,21 +62,6 @@ Sugerencia: comience con algún contenido ficticio en la tienda (store.js).
 
 ```Fetch``` la data desde la API: https://assets.breatheco.de/apis/fake/contact/
 
-Sugerencia: use Postman para probar los puntos finales de la API antes de codificar.
+Sugerencia: usa Postman para probar los puntos finales de la API antes de codificar.
 
-## Pasos para instalar este proyecto
 
-##### 1. Clona el repositorio
-```
-$ git clone https://github.com/breatheco-de/exercise-contact-list-context.git
-```
-##### 2. Instala el /node_modules
-```
-$ npm install
-```
-##### 3. Ejecutar el servidor de desarrollo webpack.
-```
-$ npm run start
-```
-
-¡Eso es! Comience a codificar su aplicación React :)
