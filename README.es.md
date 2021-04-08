@@ -24,7 +24,7 @@ b) Si trabajas localmente, escribe el siguiente comando en tu terminal: `git clo
 
 💡 Importante: Recuerda actualizar el `remote` del proyecto con el de tu repositorio usando `git remote set-url origin <your new url>`, y luego guardar tu código en tu nuevo repositorio usando `add`, `commit` y `push`.
 
-2. Intala  /nodes_modules
+2. Instala  /nodes_modules
 ```
 $ npm install
 ```
@@ -38,9 +38,9 @@ Este boilerplate no tiene funcionalidades pero si tiene el 99.9 % del HTML/CSS q
 
 ***Nota: necesitarás codificar todas las funcionalidades.***
 
-### El proyecto se divide en:
+### :memo: El proyecto se divide en:
 
-#### Dos vistas diferentes:
+#### 2 vistas diferentes:
 
 1. Contacto: Contiene la lista de contactos.
 2. AddContact: es solo un formulario utilizado para crear o actualizar contactos.
