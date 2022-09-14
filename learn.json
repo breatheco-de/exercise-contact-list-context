@@ -27,5 +27,7 @@
 		{ "badge": "model-master", "points": 5 },
 		{ "badge": "control-freak", "points": 20 },
 		{ "badge": "model-master", "points": 20 }
-	]
+	],
+    "autoPlay": false,
+    "projectType": "project"
 }
