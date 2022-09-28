@@ -32,7 +32,7 @@ $ npm install
 ```
 $ npm run start
 ```
-Este boilerplate no tiene funcionalidades pero sí tiene el 99.9 % del HTML/CSS que necesitarás en este proyecto, lo que te permitirá enfocarte en las funcionalidades.
+Este boilerplate no tiene funcionalidades pero si tiene el 99.9 % del HTML/CSS que necesitarás en este proyecto, lo que te permitirá enfocarte en las funcionalidades.
 
 ***Por favor, use el Contexto para este proyecto:*** La plantilla viene con el Contexto configurado. Verifique la carpeta ```/ store```.
 
