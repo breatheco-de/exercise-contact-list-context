@@ -1,6 +1,8 @@
-# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Contact Managment Application
+<!--hide-->
+# Aplicación de Gestión de Contactos
+<!--endhide-->
 
-Tecnologías: HTML, CSS, JS, React, React Router and Context.
+Tecnologías: HTML, CSS, JS, React, React Router y Context.
 
 ¡Hola! Es hora de empezar a hacer aplicaciones frontales profesionales. Esta vez
 Crearemos una pequeña aplicación de gestión de contactos que permitirá a los usuarios:
@@ -32,7 +34,7 @@ $ npm install
 ```
 $ npm run start
 ```
-Este boilerplate no tiene funcionalidades pero si tiene el 99.9 % del HTML/CSS que necesitarás en este proyecto, lo que te permitirá enfocarte en las funcionalidades.
+Este boilerplate no tiene funcionalidades, pero si tiene el 99.9 % del HTML/CSS que necesitarás en este proyecto, lo que te permitirá enfocarte en las funcionalidades.
 
 ***Por favor, use el Contexto para este proyecto:*** La plantilla viene con el Contexto configurado. Verifique la carpeta ```/ store```.
 
