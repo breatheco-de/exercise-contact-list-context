@@ -1,6 +1,8 @@
-# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Contact Managment Application 
+<!--hide-->
+# Contact Management Application 
+<!--endhide-->
 
-Technologies: HTML, CSS, JS, React, React Router and Context.
+Technologies: HTML, CSS, JS, React, React Router, and Context.
 
 Hello! It is time to start doing professional front-end applications. This time
 we will be creating a small contact management application that allows users to:
@@ -15,11 +17,11 @@ Or you can use these images:
 
 ## 🌱  How to start this project
 
-1. Do not clone this repository.The first step to start coding is cloning the [react boilerplate](https://github.com/4GeeksAcademy/react-hello) on your local computer or gitpod.
+1. Do not clone this repository. The first step to start coding is cloning the [react boilerplate](https://github.com/4GeeksAcademy/react-hello) on your local computer or gitpod.
 
 a) If using Gitpod you can clone the boilerplate by [clicking here](https://github.com/4GeeksAcademy/react-hello).
 
-b) If working locally type the following command from your command line: `$ git clone https://github.com/4GeeksAcademy/react-hello`.
+b) If working locally, type the following command from your command line: `$ git clone https://github.com/4GeeksAcademy/react-hello`.
 
 💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
 
