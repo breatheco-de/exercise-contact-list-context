@@ -14,16 +14,21 @@ Or you can use these images:
 [Image 1](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-1.png?raw=true) and
 [Image 2](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true)
 
-
 ## 🌱  How to start this project
 
-1. Do not clone this repository. The first step to start coding is cloning the [react boilerplate](https://github.com/4GeeksAcademy/react-hello) on your local computer or gitpod.
+Do not clone this repository because we are going to be using a different template.
 
-a) If using Gitpod you can clone the boilerplate by [clicking here](https://github.com/4GeeksAcademy/react-hello).
+We recommend opening the `react boilerplate` using a provisioning tool like [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recommended) or [Gitpod](https://4geeks.com/lesson/how-to-use-gitpod). Alternatively, you can clone it on your local computer using the `git clone` command.
 
-b) If working locally, type the following command from your command line: `$ git clone https://github.com/4GeeksAcademy/react-hello`.
+This is the repository you need to open or clone:
 
-💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
+```
+https://github.com/4GeeksAcademy/react-hello
+```
+
+**👉 Please follow these steps on** [how to start a coding project](https://4geeks.com/lesson/how-to-start-a-project).
+
+💡 Important: Remember to save and upload your code to GitHub by creating a new repository, updating the remote (`git remote set-url origin <your new url>`), and uploading the code to your new repository using the `add`, `commit` and `push` commands from the git terminal.
 
 2. Install the /node_modules
 ```
@@ -40,7 +45,7 @@ This boilerplate contains no real functionalities but it has 99.99% of the HTML/
 
 **Note: You'll need to code all functionalities.**
 
-### :memo:This project is divided in: 
+### :memo: This project is divided in: 
 
 #### :two: different views: 
 
@@ -66,6 +71,6 @@ Hint: start with some dummy content in the store (store.js).
 
 Hint: Use Postman to try the API endpoints before coding.  
 
-
-
 That is it! Start coding your React Application :)
+
+This and many other projects are built by students as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
