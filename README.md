@@ -1,6 +1,6 @@
-<!--hide-->
+<!-- hide -->
 # Contact Management Application 
-<!--endhide-->
+<!-- endhide -->
 
 Technologies: HTML, CSS, JS, React, React Router, and Context.
 
