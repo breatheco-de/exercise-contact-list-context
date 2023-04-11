@@ -1,6 +1,6 @@
-<!--hide-->
+<!-- hide -->
 # Aplicación de Gestión de Contactos
-<!--endhide-->
+<!-- endhide -->
 
 Tecnologías: HTML, CSS, JS, React, React Router y Context.
 
