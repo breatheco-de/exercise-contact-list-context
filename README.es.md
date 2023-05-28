@@ -25,7 +25,7 @@ Recomendamos abrir el `react boilerplate` usando una herramienta de aprovisionam
 Este es el repositorio que necesitas abrir o clonar:
 
 ```
-https://github.com/4GeeksAcademy/react-hello-webapp
+https://github.com/4GeeksAcademy/react-hello
 ```
 
 **👉 Por favor sigue estos pasos** [cómo comenzar un proyecto de codificación](https://4geeks.com/es/lesson/como-comenzar-un-proyecto-de-codificacion).
