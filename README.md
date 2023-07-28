@@ -67,7 +67,7 @@ All the functionalities must be implemented in the ```actions``` object (store.j
 
 Hint: start with some dummy content in the store (store.js).
 
-```Fetch``` the data from the API: https://assets.breatheco.de/apis/fake/contact/
+```Fetch``` the data from the API: https://playground.4geeks.com/apis/fake/contact/
 
 Hint: Use Postman to try the API endpoints before coding.  
 
