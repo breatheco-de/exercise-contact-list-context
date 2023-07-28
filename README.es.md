@@ -68,7 +68,7 @@ Todas las funcionalidades deben implementarse en el objeto ```actions``` (store.
 
 Sugerencia: comience con algún contenido ficticio en la tienda (store.js).
 
-```Fetch``` la data desde la API: https://assets.breatheco.de/apis/fake/contact/
+```Fetch``` la data desde la API: https://playground.4geeks.com/apis/fake/contact/
 
 Sugerencia: usa Postman para probar los puntos finales de la API antes de codificar.
 
