@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export const AddContact = () => {
+
+	const [fullName, setFullName] = useState('')
+	const [email, setEmail] = useState('')
+	const [phone, setPhone] = useState('')
+	const [address, setAdress] = useState('')
+
+
+	// funcion agregar contacto, y ejecutarla con el submit
+	//		dentro de la funcion hacemos el POST a la API
+
+
 	return (
 		<div className="container">
 			<div>
