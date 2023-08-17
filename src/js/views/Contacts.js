@@ -6,20 +6,20 @@ import { ContactCard } from "../component/ContactCard.js";
 import { Modal } from "../component/Modal";
 
 export const Contacts = () => {
-	console.log("En Contacts.js, traigo:", Context)
-	//console.log(useContext(Context));
-	//console.log("PROBANDO DESDE CONTACTS.JS");
+	//console.log("En Contacts.js, traigo:", useContext(Context));
 
-	const [state, setState] = useState({
-		showModal: false
-	});
-
+	const [state, setState] = useState({ showModal: false });
 	const { store, actions } = useContext(Context);
+
+	//console.log("2: ", store.contacts);
 
 	useEffect(() => {
 		actions.obtenerInfo();
-		//console.log("soy store.contacts: ", store.contacts);
 	}, []);
+
+	useEffect(() => {
+		//console.log("soy store.contacts: ", store.contacts);
+	}, [store.contacts]);
 
 	return (
 		<div className="container">
@@ -31,10 +31,11 @@ export const Contacts = () => {
 				</p>
 				<div id="contacts" className="panel-collapse collapse show" aria-expanded="true">
 					<ul className="list-group pull-down" id="contact-list">
-						<ContactCard onDelete={() => setState({ showModal: true })} />
-						<ContactCard />
-						<ContactCard />
-						<ContactCard />
+						{/* <ContactCard onDelete={() => setState({ showModal: true })} /> */}
+
+						{store.contacts.map((item, index) => (
+							<ContactCard key={index} contactito={item} />
+						))}
 					</ul>
 				</div>
 			</div>

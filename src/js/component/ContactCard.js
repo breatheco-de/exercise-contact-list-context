@@ -1,12 +1,22 @@
-import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
+import React, { useState, useEffect, useContext } from "react"; // paso 1 importo el hook => useContext
+import { Context } from "../store/appContext"; // paso 2 importo el Contexto de => AppContext (hace toda la magia para llegar al flux)
+
 import PropTypes from "prop-types";
 import MikePhoto from "../../img/m101.jpg";
 
 export const ContactCard = props => {
+	const { store, actions } = useContext(Context);
+
 	const [state, setState] = useState({
 		//initialize state here
 	});
+
+	//console.log(props);
+
+	useEffect(() => {}, []);
+
+	//console.log("ESTOY EN CARDCONTACTSSSSSSS: ", store.contacts);
 
 	return (
 		<li className="list-group-item">
@@ -26,7 +36,7 @@ export const ContactCard = props => {
 					<label className="name lead">Mike Anamendolla</label>
 					<br />
 					<i className="fas fa-map-marker-alt text-muted mr-3" />
-					<span className="text-muted">5842 Hillcrest Rd</span>
+					<span className="text-muted">{props.contactito.address}</span>
 					<br />
 					<span
 						className="fa fa-phone fa-fw text-muted mr-3"
@@ -53,9 +63,11 @@ export const ContactCard = props => {
  * Define the data-types for
  * your component's properties
  **/
+// VALIDA LOS DATOS QUE LE ESTOY PASANDO, en este caso del .map
 ContactCard.propTypes = {
 	history: PropTypes.object,
-	onDelete: PropTypes.func
+	onDelete: PropTypes.func,
+	contactito: PropTypes.object
 };
 
 /**
@@ -63,5 +75,6 @@ ContactCard.propTypes = {
  * your component's properties
  **/
 ContactCard.defaultProps = {
+	//contact: {},
 	onDelete: null
 };
