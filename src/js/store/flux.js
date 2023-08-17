@@ -14,12 +14,13 @@ const getState = ({ getStore, setStore, getActions }) => {
 					const response = await fetch(`https://playground.4geeks.com/apis/fake/contact/agenda/AAA`);
 					const data = await response.json();
 					setStore({ contacts: data });
-					//console.log("ESTOY EN FLUX, DATA: ", data);
+					console.log("ESTOY EN FLUX, DATA: ", data);
 				} catch (error) {
-					//console.log(error);
+					console.log(error);
 				}
 			},
 
+			//POST
 			agregarAgenda: async (fullName, email, agendaSlug, address, phone) => {
 				const contacto = {
 					address: address,
@@ -52,6 +53,37 @@ const getState = ({ getStore, setStore, getActions }) => {
 				} catch (error) {
 					console.log(error);
 				}
+			},
+			// DELETE
+			eliminarContacto: async contact_id => {
+				//Delete One Particular Contact
+				//DELETE: /apis/fake/contact/{contact_id}
+				try {
+					const response = await fetch(`https://playground.4geeks.com/apis/fake/contact/${contact_id}`, {
+						method: "DELETE",
+						headers: { "Content-Type": "application/json" }
+					});
+
+					if (response.ok) {
+						console.log("User deleted successfully");
+						getActions().obtenerInfo(); // pido los contactos de nuevo porque elimine uno
+					} else {
+						console.log("Error deleting user");
+					}
+				} catch (error) {
+					console.log(error);
+				}
+			},
+
+			//PUT
+			actualizarContacto: async (a, b, c) => {
+				const response = await fetch(`https://playground.4geeks.com/apis/fake/todos/user/${user}`, {
+					method: "PUT",
+					body: JSON.stringify(updateData),
+					headers: {
+						"Content-Type": "application/json"
+					}
+				});
 			}
 		}
 	};
