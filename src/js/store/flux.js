@@ -76,7 +76,16 @@ const getState = ({ getStore, setStore, getActions }) => {
 			},
 
 			//PUT
-			actualizarContacto: async (a, b, c) => {
+			actualizarContacto: async (fullName, email, agendaSlug, address, phone) => {
+				const contacto = {
+					address: address,
+					agenda_slug: agendaSlug,
+					email: email,
+					full_name: fullName,
+					phone: phone
+				};
+
+
 				const response = await fetch(`https://playground.4geeks.com/apis/fake/todos/user/${user}`, {
 					method: "PUT",
 					body: JSON.stringify(updateData),
