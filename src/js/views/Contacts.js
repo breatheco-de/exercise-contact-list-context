@@ -4,14 +4,16 @@ import { Context } from "../store/appContext"; // paso 2 importo el Contexto de 
 
 import { ContactCard } from "../component/ContactCard.js";
 import { Modal } from "../component/Modal";
+import { ModalModifyContact } from "../component/ModalModifyContact";
+import { AddContact } from "./AddContact";
 
 export const Contacts = () => {
 	//console.log("En Contacts.js, traigo:", useContext(Context));
 
 	const [state, setState] = useState({ showModal: false, id: undefined }); // state.id para acceder al id. Esto es un mini objeto
-	const { store, actions } = useContext(Context);
+	const [modifyState, setModifyState] = useState({ showModalModify: false, object: undefined }); // hace lo mismo que el modal
 
-	//console.log("2: ", store.contacts);
+	const { store, actions } = useContext(Context);
 
 	useEffect(() => {
 		actions.obtenerInfo();
@@ -20,6 +22,14 @@ export const Contacts = () => {
 	useEffect(() => {
 		//console.log("soy store.contacts: ", store.contacts);
 	}, [store.contacts]);
+
+	// handler juan
+	// const handleModify = () => {
+	// 	if (state.contactIdToDelete !== null) {
+	// 		actions.deleteContact(state.contactIdToDelete);
+	// 		setState({ showModal: false, contactIdToDelete: null });
+	// 	}
+	// };
 
 	return (
 		<div className="container">
@@ -39,13 +49,24 @@ export const Contacts = () => {
 								key={index}
 								contactito={item}
 								onDelete={() => setState({ showModal: true, id: item.id })}
+								handleModify={() => setModifyState({ showModalModify: true, object: item })}
 							/>
 						))}
 					</ul>
 				</div>
 			</div>
+
 			{/* si hago click en papelera, cambia estado y se ve el modal */}
 			<Modal show={state.showModal} idModalcito={state.id} onClose={() => setState({ showModal: false })} />
+
+			{/* modal para el modificar */}
+			<ModalModifyContact
+				show={modifyState.showModalModify}
+				modifyContactModalcito={modifyState.object}
+				onClose={() => setModifyState({ showModalModify: false })}
+			/>
 		</div>
 	);
 };
+
+//	handleModify={() => setModifyState({ showModalModify: true, object: item })}

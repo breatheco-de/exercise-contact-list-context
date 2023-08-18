@@ -9,6 +9,7 @@ export const ContactCard = props => {
 	const { store, actions } = useContext(Context);
 
 	const [state, setState] = useState({
+		showModify: false
 		//initialize state here
 	});
 
@@ -16,7 +17,11 @@ export const ContactCard = props => {
 		console.log(props.contactito.id); // se lo hace directo en el modal
 	}, []);
 
-	//console.log("ESTOY EN CARDCONTACTSSSSSSS: ", store.contacts);
+	const handleModify = () => {
+		//actions.actualizarContacto(props.contactito);
+		//console.log("toy en el : ", props.idModalcito);
+	};
+
 	return (
 		<li className="list-group-item">
 			<div className="row w-100">
@@ -26,7 +31,12 @@ export const ContactCard = props => {
 				<div className="col-12 col-sm-6 col-md-9 text-center text-sm-left">
 					<div className=" float-right">
 						<button className="btn">
-							<i className="fas fa-pencil-alt mr-3" />
+							<i
+								className="fas fa-pencil-alt mr-3"
+								onClick={() => {
+									props.handleModify();
+								}}
+							/>
 						</button>
 						<button className="btn" onClick={() => props.onDelete()}>
 							<i className="fas fa-trash-alt" />
@@ -66,7 +76,8 @@ export const ContactCard = props => {
 ContactCard.propTypes = {
 	history: PropTypes.object,
 	onDelete: PropTypes.func,
-	contactito: PropTypes.object
+	contactito: PropTypes.object,
+	handleModify: PropTypes.func
 };
 
 /**
