@@ -87,7 +87,7 @@ const getState = ({ getStore, setStore, getActions }) => {
 
 				const response = await fetch(`https://playground.4geeks.com/apis/fake/todos/user/${id}`, {
 					method: "PUT",
-					body: JSON.stringify(updateData),
+					body: JSON.stringify(contacto),
 					headers: {
 						"Content-Type": "application/json"
 					}

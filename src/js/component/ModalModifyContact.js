@@ -17,8 +17,9 @@ export const ModalModifyContact = props => {
 	const [phone, setPhone] = useState("");
 	const [address, setAdress] = useState("");
 
+	// falta
 	const handleModify = (fullName, email, agendaSlug, address, phone, id) => {
-		//actions.actualizarContacto(fullName, email, agendaSlug, address, phone, id)
+		actions.actualizarContacto(fullName, email, agendaSlug, address, phone, id);
 		console.log("toy en el modal de modificar: ", props.modifyContactModalcito);
 	};
 
