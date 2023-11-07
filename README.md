@@ -67,7 +67,7 @@ All the functionalities must be implemented in the `actions` object inside the `
 
 ### One component:
 
-ContactCard: It just displays one contact.
+1. ContactCard: It just displays one contact.
 
 ## 💡 Hints:
 
