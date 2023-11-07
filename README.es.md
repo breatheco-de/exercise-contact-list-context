@@ -9,7 +9,7 @@ Crearemos una pequeña aplicación de gestión de contactos que permitirá a los
 Leer, crear, actualizar y eliminar contactos. 
 
 Puedes usar este gif:
-[Mira el ejemplo aquí](https://github.com/breatheco-de/exercise-contact-list/blob/master/preview.gif?raw=true).
+[¡Mira el ejemplo aquí!](https://github.com/breatheco-de/exercise-contact-list/blob/master/preview.gif?raw=true)
 
 O bien estas imágenes:
 [Imagen 1](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-1.png?raw=true) e
