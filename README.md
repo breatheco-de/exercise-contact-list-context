@@ -14,7 +14,7 @@ Or you can use these images:
 [Image 1](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-1.png?raw=true) and
 [Image 2](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true)
 
-## 🌱  How to start this project
+## 🌱 How to start this project
 
 Do not clone this repository because we are going to be using a different template.
 
@@ -22,54 +22,60 @@ We recommend opening the `react boilerplate` using a provisioning tool like [Cod
 
 This is the repository you need to open or clone:
 
-```
+```text
 https://github.com/4GeeksAcademy/react-hello-webapp
 ```
 
 **👉 Please follow these steps on** [how to start a coding project](https://4geeks.com/lesson/how-to-start-a-project).
 
-💡 Important: Remember to save and upload your code to GitHub by creating a new repository, updating the remote (`git remote set-url origin <your new url>`), and uploading the code to your new repository using the `add`, `commit` and `push` commands from the git terminal.
+> 💡 Important: Remember to save and upload your code to GitHub by creating a new repository, updating the remote (`git remote set-url origin <your new url>`), and uploading the code to your new repository using the `add`, `commit` and `push` commands from the git terminal.
 
-2. Install the /node_modules
-```
+1. Install the `/node_modules`
+   
+```bash
 $ npm install
 ```
-3. Run the webpack development server
-```
+
+2. Run the webpack development server
+
+```bash
 $ npm run start
 ```
 
-This boilerplate contains no real functionalities but it has 99.99% of the HTML/CSS that you'll need for the project, allowing you to focus on the functionality.
+This boilerplate contains no real functionalities, but it has 99.99% of the HTML/CSS that you'll need for the project, allowing you to focus on the functionality.
 
-**Please use the Context for this project:** The boilerplate comes with the Context configured. Check the ```/store``` folder.
+**Please use the Context for this project:** The boilerplate comes with the *Context* already configured. Check the `/store` folder.
 
-**Note: You'll need to code all functionalities.**
+> Note: You'll need to code all functionalities.
 
-### :memo: This project is divided in: 
+## 📝 Instructions:
 
-#### :two: different views: 
+1. You have to add the code needed to make your application handle contacts, specifically: 
+    - create 
+    - update
+    - delete
+2. (Optional) Ask the user for confirmation before deleting, use the Modal component for that.
+
+All the functionalities must be implemented in the `actions` object inside the `flux.js` file.
+
+`fetch` the data from the API: https://playground.4geeks.com/apis/fake/contact/
+
+## This project is divided in: 
+
+### Two different views: 
 
 1. Contact: Contains the list of contacts.
 2. AddContact: It's just a form used to create or update contacts.
 
-#### One component:
-ContactCard: displays just one contact.
+### One component:
 
-## TO-DO functionalities
+ContactCard: it just displays one contact.
 
-- You have to add the code needed to make your application handle contacts, specifically: 
-    - create, 
-    - update, 
-    - and delete.
-- (Optional) Ask the user for confirmation before deleting, use the Modal component for that.
+## 💡 Hints:
 
-All the functionalities must be implemented in the ```actions``` object (store.js).
-
-Hint: start with some dummy content in the store (store.js).
-
-```Fetch``` the data from the API: https://playground.4geeks.com/apis/fake/contact/
-
-Hint: Use Postman to try the API endpoints before coding.  
++ Start with some dummy content in the store (`flux.js`).
+  
++ Use Postman to try the API endpoints before coding.  
 
 That is it! Start coding your React Application :)
 
