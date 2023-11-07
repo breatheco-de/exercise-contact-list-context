@@ -49,9 +49,9 @@ This boilerplate contains no real functionalities, but it has 99.99% of the HTML
 ## 📝 Instructions:
 
 1. You have to add the code needed to make your application handle contacts, specifically: 
-    - create 
-    - update
-    - delete
+    - Create 
+    - Update
+    - Delete
 2. (Optional) Ask the user for confirmation before deleting, use the Modal component for that.
 
 All the functionalities must be implemented in the `actions` object inside the `flux.js` file.
