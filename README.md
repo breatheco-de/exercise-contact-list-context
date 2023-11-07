@@ -46,8 +46,6 @@ This boilerplate contains no real functionalities, but it has 99.99% of the HTML
 
 **Please use the Context for this project:** The boilerplate comes with the *Context* already configured. Check the `/store` folder.
 
-> Note: You'll need to code all functionalities.
-
 ## 📝 Instructions:
 
 1. You have to add the code needed to make your application handle contacts, specifically: 
