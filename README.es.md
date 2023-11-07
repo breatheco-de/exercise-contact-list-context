@@ -54,7 +54,7 @@ Este boilerplate no tiene funcionalidades, pero si tiene el 99.99% del HTML/CSS 
     - Crear
     - Actualizar
     - Eliminar
-- (Opcional) Solicite al usuario una confirmación antes de eliminarla, use el componente modal para eso.
+- (Opcional) Solicite al usuario una confirmación antes de eliminar un contacto, usa un componente Modal para eso.
 
 Todas las funcionalidades deben implementarse en el objeto `actions` que está en `flux.js`.
 
