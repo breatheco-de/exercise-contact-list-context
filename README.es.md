@@ -65,7 +65,7 @@ Todas las funcionalidades deben implementarse en el objeto `actions` que está e
 ### Dos vistas diferentes:
 
 1. Contact: Contiene la lista de contactos.
-2. AddContact: Es solo un formulario utilizado para crear o actualizar contactos.
+2. AddContact: Es el formulario utilizado para crear o actualizar contactos.
 
 ### Un componente:
 
