@@ -58,7 +58,7 @@ Este boilerplate no tiene funcionalidades, pero si tiene el 99.99% del HTML/CSS 
 
 Todas las funcionalidades deben implementarse en el objeto `actions` que está en `flux.js`.
 
-`fetch` la data desde la API: https://playground.4geeks.com/apis/fake/contact/
+`fetch` la data desde la API: https://playground.4geeks.com/contact/docs
 
 ## El proyecto se divide en:
 
