@@ -42,38 +42,33 @@ $ npm install
 $ npm run start
 ```
 
-This boilerplate contains no real functionalities, but it has 99.99% of the HTML/CSS that you'll need for the project, allowing you to focus on the functionality.
-
-**Please use the Context for this project:** The boilerplate comes with the *Context* already configured. Check the `/store` folder.
+***Please Use the Context for This Project:** The template comes with the Context configured.
 
 ## 📝 Instructions:
 
-1. You have to add the code needed to make your application handle contacts, specifically: 
-    - Create 
+- You must add the necessary code to ensure your application handles contacts through the typical CRUD operations (Create, Read, Update, Delete), specifically:
+    - Create
+    - Read contacts
     - Update
     - Delete
-2. (Optional) Ask the user for confirmation before deleting, use the Modal component for that.
+- (Optional) Ask the user for confirmation before deleting a contact. Use a Modal component for this.
 
-All the functionalities must be implemented in the `actions` object inside the `flux.js` file.
+All functionalities must be implemented under the concept of Context.
 
-`fetch` the data from the API: https://playground.4geeks.com/contact/docs
+`fetch` the data from the API: [https://playground.4geeks.com/contact/docs](https://playground.4geeks.com/contact/docs)
 
-## This project is divided in: 
+## The Project Should Have Two Different Views:
 
-### Two different views: 
+1. **Contact:** This view should display the list of contacts.
+2. **AddContact:** This view should include the form used to create or update contacts.
 
-1. Contact: Contains the list of contacts.
-2. AddContact: It's just a form used to create or update contacts.
+### One Component:
 
-### One component:
+1. **ContactCard:** Displays a single contact.
 
-1. ContactCard: It just displays one contact.
+## 💡 Tips:
 
-## 💡 Hints:
-
-+ Start with some dummy content in the store (`flux.js`).
-  
-+ Use Postman to try the API endpoints before coding.  
++ Use Postman to test the API endpoints before coding.
 
 That is it! Start coding your React Application :)
 

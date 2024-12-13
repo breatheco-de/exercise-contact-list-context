@@ -44,28 +44,25 @@ $ npm install
 $ npm run start
 ```
 
-Este boilerplate no tiene funcionalidades, pero si tiene el 99.99% del HTML/CSS que necesitarás en este proyecto, lo que te permitirá enfocarte en las funcionalidades.
-
-**Por favor, use el Contexto para este proyecto:** La plantilla viene con el Contexto configurado. Verifique la carpeta `/store`.
+**Por favor, use el Contexto para este proyecto:** La plantilla viene con el Contexto configurado.
 
 ## 📝 Instrucciones:
 
-- Debes agregar el código necesario para que su aplicación maneje los contactos, específicamente:
+- Debes agregar el código necesario para que su aplicación maneje los contactos, a través del tipico CRUD(Cread Read Update Borrar) específicamente:
     - Crear
+    - leer contactos
     - Actualizar
     - Eliminar
 - (Opcional) Solicite al usuario una confirmación antes de eliminar un contacto, usa un componente Modal para eso.
 
-Todas las funcionalidades deben implementarse en el objeto `actions` que está en `flux.js`.
+Todas las funcionalidades deben implementarse bajo en el concepto del contexto.
 
 `fetch` la data desde la API: https://playground.4geeks.com/contact/docs
 
-## El proyecto se divide en:
+## El proyecto deberia tener 2 vistas diferentes:
 
-### Dos vistas diferentes:
-
-1. Contact: Contiene la lista de contactos.
-2. AddContact: Es el formulario utilizado para crear o actualizar contactos.
+1. Contact: Esta vista debe contiener la lista de contactos.
+2. AddContact: Deberá tener el formulario utilizado para crear o actualizar contactos.
 
 ### Un componente:
 
@@ -73,7 +70,6 @@ Todas las funcionalidades deben implementarse en el objeto `actions` que está e
 
 ## 💡 Pistas: 
 
-+ Comience con algún contenido ficticio en la *store* (`flux.js`).
 + Usa Postman para probar los *endpoints* de la API antes de codificar.
 
 Este y otros proyectos son usados para [aprender a programar](https://4geeksacademy.com/es/aprender-a-programar/aprender-a-programar-desde-cero) por parte de los alumnos de 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) realizado por [Alejandro Sánchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Conoce más sobre nuestros [Cursos de Programación](https://4geeksacademy.com/es/curso-de-programacion-desde-cero?lang=es) para convertirte en [Full Stack Developer](https://4geeksacademy.com/es/coding-bootcamps/desarrollador-full-stack/?lang=es), o nuestro [Data Science Bootcamp](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning).
