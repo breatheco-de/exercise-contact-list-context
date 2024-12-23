@@ -14,6 +14,8 @@ Or you can use these images:
 [Image 1](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-1.png?raw=true) and
 [Image 2](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true)
 
+<onlyfor saas="false" withBanner="false">
+
 ## 🌱 How to start this project
 
 Do not clone this repository because we are going to be using a different template.
@@ -45,6 +47,8 @@ $ npm run start
 This boilerplate contains no real functionalities, but it has 99.99% of the HTML/CSS that you'll need for the project, allowing you to focus on the functionality.
 
 **Please use the Context for this project:** The boilerplate comes with the *Context* already configured. Check the `/store` folder.
+
+</onlyfor>
 
 ## 📝 Instructions:
 
