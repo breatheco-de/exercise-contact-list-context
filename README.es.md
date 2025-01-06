@@ -2,7 +2,7 @@
 # Aplicación de Gestión de Contactos
 <!-- endhide -->
 
-Tecnologías: HTML, CSS, JS, React, React Router y Context.
+Tecnologías: HTML, CSS, JS, React, React Router y Context.API.
 
 ¡Hola! Es hora de empezar a hacer aplicaciones de front-end profesionales. Esta vez
 Crearemos una pequeña aplicación de gestión de contactos que permitirá a los usuarios:
@@ -38,13 +38,13 @@ https://github.com/4GeeksAcademy/react-hello-webapp
 $ npm install
 ```
 
-2. Ejecuta el servidor webpack development
+2. Ejecuta el servidor development
 
 ```bash
 $ npm run start
 ```
 
-**Por favor, use el Contexto para este proyecto:** La plantilla viene con el Contexto configurado.
+**Por favor, use el Context.API para este proyecto:** La plantilla viene con el Contexto configurado.
 
 ## 📝 Instrucciones:
 
@@ -55,7 +55,7 @@ $ npm run start
     - Eliminar
 - (Opcional) Solicite al usuario una confirmación antes de eliminar un contacto, usa un componente Modal para eso.
 
-Todas las funcionalidades deben implementarse bajo en el concepto del contexto.
+Todas las funcionalidades deben implementarse bajo en el concepto del Context.API.
 
 `fetch` la data desde la API: https://playground.4geeks.com/contact/docs
 
