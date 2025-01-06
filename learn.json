@@ -8,6 +8,7 @@
 	"technologies": ["react.js","javascript","context.api","flux"],
 	"solution": "https://github.com/breatheco-de/exercise-contact-list-context/tree/solution",
 	"duration" : 24,
+	"template_url": "https://github.com/4GeeksAcademy/react-hello-webapp",
 	"description" : "Create a simple contact list application using React.js",
 	"talents": [
 		{ "badge": "tag-master", "points": 10 },

@@ -14,6 +14,8 @@ Or you can use these images:
 [Image 1](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-1.png?raw=true) and
 [Image 2](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true)
 
+<onlyfor saas="false" withBanner="false">
+
 ## 🌱 How to start this project
 
 Do not clone this repository because we will be using a different template.
@@ -43,6 +45,8 @@ $ npm run start
 ```
 
 ***Please Use the Context for This Project:** The template comes with the Context.API already configured.
+
+</onlyfor>
 
 ## 📝 Instructions:
 
