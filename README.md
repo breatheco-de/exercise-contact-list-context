@@ -2,7 +2,7 @@
 # Contact Management Application 
 <!-- endhide -->
 
-Technologies: HTML, CSS, JS, React, React Router, and Context.
+Technologies: HTML, CSS, JS, React, React Router, and Context.API.
 
 Hello! It is time to start doing professional front-end applications. This time
 we will be creating a small contact management application that allows users to:
@@ -16,7 +16,7 @@ Or you can use these images:
 
 ## 🌱 How to start this project
 
-Do not clone this repository because we are going to be using a different template.
+Do not clone this repository because we will be using a different template.
 
 We recommend opening the `react boilerplate` using a provisioning tool like [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recommended) or [Gitpod](https://4geeks.com/lesson/how-to-use-gitpod). Alternatively, you can clone it on your local computer using the `git clone` command.
 
@@ -36,13 +36,13 @@ https://github.com/4GeeksAcademy/react-hello-webapp
 $ npm install
 ```
 
-2. Run the webpack development server
+2. Run the development server
 
 ```bash
 $ npm run start
 ```
 
-***Please Use the Context for This Project:** The template comes with the Context configured.
+***Please Use the Context for This Project:** The template comes with the Context.API already configured.
 
 ## 📝 Instructions:
 
@@ -51,9 +51,9 @@ $ npm run start
     - Read contacts
     - Update
     - Delete
-- (Optional) Ask the user for confirmation before deleting a contact. Use a Modal component for this.
+- (Optional) Ask the user for confirmation before deleting a contact. We recommend wsing a Modal component for this.
 
-All functionalities must be implemented under the concept of Context.
+All functionalities must be implemented under the concept of Context.API.
 
 `fetch` the data from the API: [https://playground.4geeks.com/contact/docs](https://playground.4geeks.com/contact/docs)
 
