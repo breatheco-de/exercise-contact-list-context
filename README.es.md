@@ -17,7 +17,7 @@ O bien estas imágenes:
 
 <onlyfor saas="false" withBanner="false">
 
-## 🌱 Cómo comenzar este proyecto
+## 🌱 Cómo comenzar este proyecto?
 
 No clones este repositorio porque vamos a usar una plantilla diferente.
 
