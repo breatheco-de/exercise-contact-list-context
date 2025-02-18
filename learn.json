@@ -1,6 +1,9 @@
 
 {
-	"title" : "Contact List App Using React & Context",
+	"title" : {
+		"us":"Contact List App Using React & Context",
+		"es":"Lista de Contactos usando React & Context"
+	},
 	"slug" : "contact-list-context",
 	"status": "published",
 	"difficulty": "intermediate",
@@ -9,7 +12,10 @@
 	"solution": "https://github.com/breatheco-de/exercise-contact-list-context/tree/solution",
 	"duration" : 24,
 	"template_url": "https://github.com/4GeeksAcademy/react-hello-webapp",
-	"description" : "Create a simple contact list application using React.js",
+	"description": {
+		"us":"Build a contact management app using React.js, React Router, and Context API. This project lets users create, read, update, and delete contacts. Fetch data from an API and manage state using Context. Implement CRUD operations and enhance UX with modals for deletion confirmation.",
+		"es":"Crea una aplicación de gestión de contactos con React.js, React Router y Context API. Este proyecto permite a los usuarios crear, leer, actualizar y eliminar contactos. Obtén datos de una API y gestiona el estado con Context. Implementa operaciones CRUD y mejora la UX con modales para confirmar eliminaciones."
+	},
 	"talents": [
 		{ "badge": "tag-master", "points": 10 },
 		{ "badge": "select-everything", "points": 5 },
@@ -30,5 +36,9 @@
 		{ "badge": "model-master", "points": 20 }
 	],
     "autoPlay": false,
-    "projectType": "project"
+    "projectType": "project",
+	"telemetry": {
+	  "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id=176"
+	  }
+	
 }
