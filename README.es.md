@@ -12,8 +12,9 @@ Puedes usar este gif:
 [¡Mira el ejemplo aquí!](https://github.com/breatheco-de/exercise-contact-list/blob/master/preview.gif?raw=true)
 
 O bien estas imágenes:
-[Imagen 1](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-1.png?raw=true) e
-[Imagen 2](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true)
+![Image 1](https://raw.githubusercontent.com/breatheco-de/exercise-contact-list-context/master/src/img/contact-list-1.png?raw=true) y
+![Image 2](https://github.com/breatheco-de/exercise-contact-list-context/blob/master/src/img/contact-list-2.png?raw=true)
+
 
 <onlyfor saas="false" withBanner="false">
 
